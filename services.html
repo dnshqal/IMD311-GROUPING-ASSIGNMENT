@@ -1,0 +1,414 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+    <title>Our Services</title>
+    <link href="css/style2.css" rel="stylesheet">
+    <div class="div1">
+        <nav>
+            <img src="img/Inkworks printing (2).png">
+            <br>
+            <a href="index.html" class="navbar">Home</a>
+            <a href="services.html" class="navbar">Our Services</a>
+            <a href="aboutus.html" class="navbar">About Us</a>
+            <a href="contact.html" class="navbar">Contact Us</a>
+            <a href="privacypolicy.html" class="navbar">Privacy Policy</a>
+        </nav>
+    </div>
+    <br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="img/slideshow 1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="img/slideshow 2.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<h1 style="color:#2a3042;">Our Online Printing Services</h1>
+<h3 style="color:#1b1d21;">Design online | Print online | Manage artwork and orders online.</h3>
+
+<p1>Inkworks Printing is a completely integrated design-to-print solution.You may also upload your own pre-prepared artwork or hire one of our professional graphic designers.The team of professionals at the nearby Inkworks Printing 
+will assist you in developing print materials that elicit the WOW response you need.</p1>
+
+<br>
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style>
+    </head>
+    <body>
+    
+        <center><h2>______________________</h2>
+    
+    <div class="row">
+      <div class="column">
+        <figcaption><b>Booklets</b></figcaption>
+        <br>
+        <img src="img/booklet.PNG" alt="Snow" style="width:90%">
+        <br>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <br>
+<style>
+.button {
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #B29D74 ;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #695C42  ;
+}
+
+.button:hover {background-color:#040F2A }
+
+.button:active {
+  background-color: #B29D74;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+<button class="button">Buy Now!</button>
+
+      </div>
+      <div class="column">
+        <figcaption><b>Brochure</b></figcaption>
+        <br>
+        <img src="img/brochure.PNG" alt="Forest" style="width:95%">
+        <br>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <br>
+<style>
+.button {
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #B29D74 ;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #695C42  ;
+}
+
+.button:hover {background-color:#040F2A }
+
+.button:active {
+  background-color: #B29D74;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+<button class="button">Buy Now!</button>
+      </div>
+
+      <div class="column">
+        <figcaption><b>Stickers/Labels</b></figcaption>
+        <br>
+        <img src="img/stickers.PNG" alt="Mountains" style="width:81%">
+        <br>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <br>
+<style>
+.button {
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #B29D74 ;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #695C42  ;
+}
+
+.button:hover {background-color:#040F2A }
+
+.button:active {
+  background-color: #B29D74;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+<button class="button">Buy Now!</button>
+      </div></center>
+    
+      <center><h2>______________________</h2>
+        
+        <div class="row">
+      <div class="column">
+        <figcaption><b>Packaging</b></figcaption>
+        <br>
+        <img src="img/packaging.PNG" alt="Forest" style="width:85%">
+        <br>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <br>
+<style>
+.button {
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #B29D74 ;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #695C42  ;
+}
+
+.button:hover {background-color:#040F2A }
+
+.button:active {
+  background-color: #B29D74;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+<button class="button">Buy Now!</button>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <figcaption><b>Calendar</b></figcaption>
+          <br>
+          <img src="img/calendar.jpg" alt="Snow" style="width:85%">
+          <br>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <br>
+  <style>
+  .button {
+    padding: 10px 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #B29D74 ;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #695C42  ;
+  }
+  
+  .button:hover {background-color:#040F2A }
+  
+  .button:active {
+    background-color: #B29D74;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  </style>
+  </head>
+  <body>
+  <button class="button">Buy Now!</button>
+        </div>
+
+        <div class="row">
+            <div class="column">
+              <figcaption><b>Posters</b></figcaption>
+              <br>
+              <img src="img/posters.PNG" alt="Snow" style="width:85%">
+              <br>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <br>
+      <style>
+      .button {
+        padding: 10px 15px;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: rgb(225, 153, 98) ;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #695C42  ;
+      }
+      
+      .button:hover {background-color:rgb(244, 102, 123) }
+      
+      .button:active {
+        background-color: rgb(225, 153, 98);
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      </style>
+      </head>
+      <body>
+      <button class="button">Buy Now!</button>
+            </div></center>
+
+        </div>
+        <center><h2>______________________</h2>
+    </div>
+
+
+</body>
+</html>
